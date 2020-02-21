@@ -1,0 +1,112 @@
+/*Código armado por La Foca Loca S.A. No modificar*/
+*{
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  width: 940px;
+  margin: 5% auto;
+  min-height: 100%;
+  background-image: url(../images/blueline.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+ul {
+  padding-left: 0;
+  list-style: none;
+}
+li {
+  padding: 5px 0;
+  animation: fadein 5s;
+}
+li::before {
+  content: "• ";
+  color: #EC6778;
+}
+
+.col-40 h1 {
+  font-size: 20px;
+  color: #E84A5F;
+}
+.col-40 h2 {
+  font-size: 15px;
+  color: #E84A5F;
+}
+
+.col-40, .col-60 {
+  display: table-cell;
+  margin: 0;
+  vertical-align: top;
+}
+.col-40 {  
+  padding: 30px;
+  color:whitesmoke;
+  background-image: url(../images/black-white.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  border-left: 1px solid white;
+  border-right: 1px dashed orange;
+}
+
+.col-60 {
+  background-image: url(../images/blue.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 600px; 
+  overflow: hidden;
+  border-right: 1px dashed orange;
+  border-top: 1px dashed orange;
+  
+}
+.col-60 .pieza{
+  width: 33.33%;
+  height: 200px;
+  float:left;
+  border: 1px dashed orange;
+}
+.pieza img{      
+  width: 100%;  
+  float:left;
+  display: block; 
+}
+
+#flecha{
+  font-size: 60px; 
+  color:papayawhip;
+  
+}
+
+.texto-centrado {
+  text-align: center;
+}
+.texto-centrado img{
+  width: 200px;
+  height: 200px;
+  background: lightcoral;
+  border: 1px solid rebeccapurple;
+}
+
+#footer{
+  background-image: url(../images/blue-motion.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 1px solid white;  
+  width: 100%;  
+  clear: both;
+  color:white;
+  font-weight: bold;
+  margin-top: 0.5px
+}
+
+#juego div {
+  text-align: center;
+  animation: fadein 0.5s;
+}
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
